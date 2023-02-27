@@ -59,7 +59,7 @@ func wordpress(w http.ResponseWriter, r *http.Request) {
 	str = strings.Replace(str, "xh", "7", -1)
 	str = strings.Replace(str, "xn", "9", -1)
 
-	fmt.Println("Path: " + r.URL.Path + " Forward to: " + "http://" + dip + ":" + str)
+	//fmt.Println("Forward to: " + "http://" + dip + ":" + str)
 
 	//u, _ := url.Parse("http://" + getEnvVariable("DIP") + ":" + vars[2])
 	u, _ := url.Parse("http://" + dip + ":" + str)
